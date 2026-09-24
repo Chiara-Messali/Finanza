@@ -237,8 +237,8 @@
     // Categorie Aggiornate (Rimossi Servizi e Famiglia; aggiunti Abbonamenti, Sanità e Lavoro)
     const CategorieData = {
       uscite: [
-        { nome: "Alimentari", icona: "fa-basket-shopping", colore: "#00c7be", sottocategorie: [] },
         { nome: "Svago", icona: "fa-cutlery", colore: "#af52de", sottocategorie: [] },
+        { nome: "Alimentari", icona: "fa-basket-shopping", colore: "#00c7be", sottocategorie: [] },
         { nome: "Shopping", icona: "fa-shopping-cart", colore: "#ed80e8", sottocategorie: [] },
         { nome: "Regali", icona: "fa-gift", colore: "#d8db25", sottocategorie: [] },
         { nome: "Abbonamenti", icona: "fa-bars", colore: "#fca33d", sottocategorie: [] },
@@ -261,7 +261,7 @@
     let transactions = JSON.parse(localStorage.getItem('spese_db')) || [];
     let currentDate = new Date();
     let isEntrata = false;
-    let selectedCategory = "Alimentari";
+    let selectedCategory = "Svago";
     let selectedSubcategory = "";
     let editingId = null;
     let editIsEntrata = false;
